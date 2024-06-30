@@ -1,0 +1,16 @@
+import requests
+
+url = "https://jsonplaceholder.typicode.com/posts"
+# response = requests.get(url)
+data = {
+  "Title": 'AYAAN',
+  "Body": 'BHAI',
+  "UserID": '2958'
+}
+
+headers = {
+  'Content-Type': 'application/json;charset=UTF-8'
+}
+
+response = requests.post(url, data=data, headers=headers,
+json=data)
